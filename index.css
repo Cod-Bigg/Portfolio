@@ -1,0 +1,74 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+nav {
+  background-color: #181A1E;
+}
+
+.navbar-brand {
+  border-bottom: 3px solid #CBBBAD;
+  padding-bottom: 10px;
+}
+
+a:hover {
+  border-bottom: 2px solid #CBBBAD;
+}
+
+body {
+  background-color: #181A1E;
+  color: white;
+}
+
+.portfolio-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 500px;
+}
+
+.portfolio-flex .intro-text {
+  width: 30%;
+  margin-right: 15%;
+}
+
+.portfolio-flex .intro-text button {
+  background-color: transparent;
+  padding: 10px;
+  color: white;
+  border-radius: 13%;
+  width: 40%;
+  font-weight: bolder;
+}
+
+.portfolio-flex button:hover {
+  background-color: #CBBBAD;
+  font-weight: bolder;
+}
+
+.portfolio-flex .intro-text p {
+  font-size: 1.5em;
+}
+
+.portfolio-flex img {
+  border-radius: 50%;
+  height: 400px;
+}
+
+.portfolio-flex .social-media img {
+  padding-left: 300px;
+}
+/*# sourceMappingURL=index.css.map */

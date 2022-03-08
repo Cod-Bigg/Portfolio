@@ -1,0 +1,115 @@
+@import "index";
+@mixin altProjectDisplay{
+    h1{
+        color: $secondaryColor;
+    }
+    h2{
+        padding-left: 30%;
+        padding-top: 3%;
+    }
+    .heading-text{
+        text-align: center;
+        padding-bottom: 2%;
+    }
+    .project-img-alt{
+        display: flex;
+        justify-content: center;
+        
+    }
+    .project-fact-site-overview p, .project-fact-site-result p{
+        @include projectText();
+    }
+}
+@mixin projectText {
+    width: 40%;
+    margin-left: 30%;
+}
+@mixin buttonMix {
+    background-color: $transparent;
+padding: 10px;
+color: $textColor;
+border-radius: 13%;
+width: 30%;
+font-weight: $bolder;
+}
+@mixin projectDisplay {
+    display: flex;
+    flex-direction: row;
+    padding-left: 10%;
+}
+@mixin displayText {
+    
+    width: 45%;
+    padding-left: $twenty;
+}
+$none: none;
+$twenty: 20%;
+img{
+    height: 50px;
+}
+body{
+    background-color: $bgcolor;
+}
+.project-display{
+    @include projectDisplay();
+        
+}
+.project-display h1{
+    padding-left: $twenty;
+    padding-top: 10%;
+}
+.project-display p{
+    @include displayText();
+}
+button{
+    @include buttonMix();
+    margin-left: 15%;
+}
+.planet-project-alt{
+    display: none;
+    @include altProjectDisplay();
+    .live-project{
+        margin-left: 35%;
+        width: 25%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+}
+.project-display-2{
+   @include projectDisplay();
+   padding-top: 6%;
+
+   .project-text-2 p, .project-text-2 h1{
+    @include displayText(); 
+   }
+   .project-text-2 h1{
+       padding-top: 3%;
+   }
+}
+.project-alt-two{
+    display: none;
+    @include altProjectDisplay();
+
+    .live-crowd-button{
+        margin-left: 30%;
+        margin-top: 3%;
+    }
+}
+.project-display-3{
+    @include projectDisplay();
+    padding-top: 10%;
+    margin-bottom: 5%;
+ 
+    .project-text-3 p, .project-text-3 h1{
+     @include displayText(); 
+    }
+ }
+ .project-alt-three{
+     display: none;
+     @include altProjectDisplay();
+     .live-tip-button{
+        margin-left: 30%;
+        margin-top: 3%;
+    }
+ }
+ 
